@@ -15,6 +15,7 @@ var dishRouter = require('./routes/dishRouter');
 var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
 var exerciseRouter = require('./routes/exerciseRouter');
+var attendanceRouter = require('./routes/attendanceRouter');
 
 
 const mongoose = require('mongoose');
@@ -52,6 +53,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/dishes',dishRouter);
 app.use('/exercises',exerciseRouter);
+app.use('/attendance',attendanceRouter);
 app.use('/promotions',promoRouter);
 app.use('/leaders',leaderRouter);
 

@@ -31,8 +31,8 @@ const exerciseSchema = new Schema({
         type: Number,
         default: 100
     },
-    date: {
-        DateOnly
+    duedate: {
+        type: Date
     },
     studentgrade:[studentgradeSchema]
 }, {
